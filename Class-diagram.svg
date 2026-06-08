@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="712px" preserveAspectRatio="none" style="background:#FFFFFF;" version="1.1" viewBox="0 0 942 712" width="942px">
+  <defs/>
+  <g>
+    <text font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" x="459" y="28.708">UML Class Diagram - BanManager</text>
+    
+    <g id="elem_User">
+      <rect fill="#F1F1F1" height="154.3438" id="User" style="stroke:#181818;stroke-width:1.5;" width="232" x="343" y="55"/>
+      <ellipse cx="358" cy="71" fill="#A9DCAF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+      <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="462" y="76.3418">User</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="344" x2="574" y1="87" y2="87"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="104.1387">- id: Long</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="118.2324">- microsoftId: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="132.3262">- minecraftUuid: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="146.4199">- nickname: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="160.5137">- email: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="174.6074">- role: UserRole</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="344" x2="574" y1="181.7109" y2="181.7109"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="198.8496">+ isBanned(): Boolean</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="349" y="212.9434">+ hasAdminRights(): Boolean</text>
+    </g>
+    
+    <g id="elem_Ban">
+      <rect fill="#F1F1F1" height="154.3438" id="Ban" style="stroke:#181818;stroke-width:1.5;" width="224" x="347" y="347"/>
+      <ellipse cx="362" cy="363" fill="#A9DCAF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+      <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="462" y="368.3418">Ban</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="348" x2="570" y1="379" y2="379"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="396.1387">- id: Long</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="410.2324">- reason: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="424.3262">- banDate: LocalDateTime</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="438.4199">- expireDate: LocalDateTime</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="452.5137">- status: BanStatus</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="466.6074">- ipAddress: String</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="348" x2="570" y1="473.7109" y2="473.7109"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="490.8496">+ revoke(): void</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="353" y="504.9434">+ isExpired(): Boolean</text>
+    </g>
+    
+    <g id="elem_Ticket">
+      <rect fill="#F1F1F1" height="126.1563" id="Ticket" style="stroke:#181818;stroke-width:1.5;" width="258" x="653" y="361"/>
+      <ellipse cx="668" cy="377" fill="#A9DCAF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+      <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="785" y="382.3418">Ticket</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="654" x2="910" y1="393" y2="393"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="659" y="410.1387">- id: Long</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="659" y="424.2324">- title: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="659" y="438.3262">- createdAt: LocalDateTime</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="659" y="452.4199">- status: TicketStatus</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="654" x2="910" y1="459.5137" y2="459.5137"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="659" y="476.6523">+ closeTicket(): void</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="659" y="490.7461">+ assignToAdmin(admin: User): void</text>
+    </g>
+    
+    <g id="elem_Message">
+      <rect fill="#F1F1F1" height="97.9688" id="Message" style="stroke:#181818;stroke-width:1.5;" width="216" x="674" y="559"/>
+      <ellipse cx="689" cy="575" fill="#A9DCAF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+      <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="785" y="580.3418">Message</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="675" x2="889" y1="591" y2="591"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="680" y="608.1387">- id: Long</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="680" y="622.2324">- content: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="680" y="636.3262">- createdAt: LocalDateTime</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="675" x2="889" y1="643.4199" y2="643.4199"/>
+    </g>
+    
+    <g id="elem_AuditLog">
+      <rect fill="#F1F1F1" height="112.0625" id="AuditLog" style="stroke:#181818;stroke-width:1.5;" width="222" x="25" y="76"/>
+      <ellipse cx="40" cy="92" fill="#A9DCAF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/>
+      <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="154" y="97.3418">AuditLog</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="26" x2="246" y1="108" y2="108"/>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="31" y="125.1387">- id: Long</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="31" y="139.2324">- actionType: String</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="31" y="153.3262">- timestamp: LocalDateTime</text>
+      <text font-family="sans-serif" font-size="12" text-anchor="left" x="31" y="167.4199">- details: String</text>
+      <line style="stroke:#181818;stroke-width:1.5;" x1="26" x2="246" y1="174.5137" y2="174.5137"/>
+    </g>
+    
+    <path d="M247.38,132 C278.43,132 310.45,132 342.66,132" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="255.38" y="125.5">1</text>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="334.66" y="125.5">*</text>
+    
+    <path d="M428,209.61 L428,346.74" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="434" y="222.61">1</text>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="434" y="339.74">*</text>
+    <text font-family="sans-serif" font-size="11" text-anchor="middle" x="390" y="275">- targetUser</text>
+    
+    <path d="M490,209.61 L490,346.74" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="496" y="222.61">1</text>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="496" y="339.74">*</text>
+    <text font-family="sans-serif" font-size="11" text-anchor="middle" x="532" y="275">- creatorUser</text>
+    
+    <path d="M575.05,166.75 C634.62,176.62 696.53,196.48 732,242 C760.19,278.18 772.93,327.27 779.17,360.52" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="583.05" y="160.25">1</text>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="771.17" y="353.52">*</text>
+    
+    <path d="M571.19,424 C598.05,424 625.56,424 652.79,424" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="579.19" y="417.5">1</text>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="644.79" y="417.5">0..1</text>
+    
+    <path d="M782,487.3 C782,509.72 782,534.69 782,558.74" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="782,487.3,778,493.3,782,499.3,786,493.3,782,487.3" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="788" y="512.3">1</text>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="788" y="551.74">*</text>
+    
+    <path d="M342.92,192 C248.8,225.8 45,302 45,431 C45,556 462,561 673.53,600.41" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="330.92" y="206">1</text>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="665.53" y="593.91">*</text>
+    <text font-family="sans-serif" font-size="11" text-anchor="middle" x="110" y="540">- author</text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="524px" preserveAspectRatio="none" style="background:#FFFFFF;" version="1.1" viewBox="0 0 831 524" width="831px">
+  <defs/>
+  <g>
+    <text font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" x="403.5" y="28.708">Use Case Diagram - BanManager</text>
+    <rect fill="#F1F1F1" height="469.1563" id="id_BanManager" style="stroke:#181818;stroke-width:1.5;" width="471" x="336" y="42.9531"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="571.5" y="58.1719">BanManager</text>
+    <g id="elem_UC_ViewBans">
+      <ellipse cx="571.428" cy="94.4984" fill="#F1F1F1" rx="114.928" ry="24.5453" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="571.428" y="98.2465">Zobrazit veřejný seznam banů</text>
+    </g>
+    <g id="elem_UC_CreateTicket">
+      <ellipse cx="571.4116" cy="172.176" fill="#F1F1F1" rx="131.9116" ry="27.2229" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="571.4116" y="175.0491">Podat odvolání (Vytvořit ticket)</text>
+    </g>
+    <g id="elem_UC_TrackTicket">
+      <ellipse cx="571.4728" cy="249.2065" fill="#F1F1F1" rx="108.9728" ry="23.2534" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="571.4728" y="252.9546">Sledovat stav svého ticketu</text>
+    </g>
+    <g id="elem_UC_ManageTickets">
+      <ellipse cx="571.5583" cy="326.6341" fill="#F1F1F1" rx="127.5583" ry="26.4778" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="571.5583" y="329.6309">Zpřístupnit administraci ticketů</text>
+    </g>
+    <g id="elem_UC_ResolveTicket">
+      <ellipse cx="571.4632" cy="406.8458" fill="#F1F1F1" rx="142.9632" ry="29.3474" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="571.4632" y="409.8427">Odpovědět na ticket / Uzavřít ticket</text>
+    </g>
+    <g id="elem_UC_AddBan">
+      <ellipse cx="423.6338" cy="483.9515" fill="#F1F1F1" rx="71.6338" ry="16"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="423.6338" y="487.7">Udělit ban hráči</text>
+    </g>
+    <g id="elem_UC_RemoveBan">
+      <ellipse cx="718.919" cy="483.9515" fill="#F1F1F1" rx="72.419" ry="16"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="718.919" y="487.7">Zrušit ban hráči (Unban)</text>
+    </g>
+    <g id="elem_UC_ViewLogs">
+      <ellipse cx="718.5" cy="326.5" fill="#F1F1F1" rx="1" ry="1"/>
+    </g>
+    <g id="elem_UC_LogAction">
+      <ellipse cx="423.5" cy="326.5" fill="#F1F1F1" rx="1" ry="1"/>
+    </g>
+    <g id="elem_UC_SyncPlugin">
+      <ellipse cx="571.5" cy="484" fill="#F1F1F1" rx="1" ry="1"/>
+    </g>
+    <g id="elem_Visitor">
+      <circle cx="49.5" cy="94.5" fill="#F1F1F1" r="14" style="stroke:#181818;stroke-width:1.5;"/>
+      <path d="M49.5,108.5 L49.5,135.5 M36.5,116.5 L62.5,116.5 M49.5,135.5 L36.5,150.5 M49.5,135.5 L62.5,150.5 " fill="none" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="49.5" y="164.9951">Návštěvník</text>
+    </g>
+    <g id="elem_Player">
+      <circle cx="49.5" cy="226.5" fill="#F1F1F1" r="14" style="stroke:#181818;stroke-width:1.5;"/>
+      <path d="M49.5,240.5 L49.5,267.5 M36.5,248.5 L62.5,248.5 M49.5,267.5 L36.5,282.5 M49.5,267.5 L62.5,282.5 " fill="none" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="49.5" y="296.9951">Hráč</text>
+    </g>
+    <g id="elem_Admin">
+      <circle cx="49.5" cy="381.5" fill="#F1F1F1" r="14" style="stroke:#181818;stroke-width:1.5;"/>
+      <path d="M49.5,395.5 L49.5,422.5 M36.5,403.5 L62.5,403.5 M49.5,422.5 L36.5,437.5 M49.5,422.5 L62.5,437.5 " fill="none" style="stroke:#181818;stroke-width:1.5;"/>
+      <text font-family="sans-serif" font-size="14" text-anchor="middle" x="49.5" y="451.9951">Administrátor</text>
+    </g>
+    <path d="M49.5,209.11 C49.5,196.22 49.5,181.38 49.5,168.17 " fill="none" id="link_Visitor_Player" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="none" points="43.5,209.28,49.5,225.28,55.5,209.28,43.5,209.28" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M49.5,364.32 C49.5,340.94 49.5,313.41 49.5,297.18 " fill="none" id="link_Player_Admin" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="none" points="43.5,364.44,49.5,380.44,55.5,364.44,43.5,364.44" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M91.81,114.72 C171.74,111.08 349.57,103.01 456.41,98.15 " fill="none" id="link_Visitor_UC_ViewBans" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="461.4,97.92,453.298,94.0487,456.4087,98.1477,452.3096,101.2584,461.4,97.92" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M91.56,241.13 C113.88,233.16 142.12,223.36 167,215.5 C255.43,187.57 359.18,178.68 439.46,174.96 " fill="none" id="link_Player_UC_CreateTicket" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="444.45,174.73,436.3155,170.9231,439.4526,174.9608,435.4149,178.098,444.45,174.73" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M91.68,252.12 C165.74,251.61 328.79,250.49 452.33,249.65 " fill="none" id="link_Player_UC_TrackTicket" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="457.33,249.61,449.3564,245.5606,452.33,249.6454,448.2452,252.619,457.33,249.61" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M91.62,408 C173.23,392.51 354.21,358.17 458.74,338.33 " fill="none" id="link_Admin_UC_ManageTickets" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="463.67,337.4,454.8967,334.2001,458.7423,338.334,454.6085,342.1795,463.67,337.4" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M91.62,414 C179.91,412.7 369.31,409.91 465.17,408.5 " fill="none" id="link_Admin_UC_ResolveTicket" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="470.17,408.43,462.1159,404.5492,465.1706,408.5029,461.2169,412.5576,470.17,408.43" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M84.77,433.09 C107.97,449.03 139.69,468.21 171,477.5 C250.31,498.49 275.46,488.75 357.24,484.81 " fill="none" id="link_Admin_UC_AddBan" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="362.24,484.57,354.0494,480.9612,357.2384,484.8115,353.3881,487.9505,362.24,484.57" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M68.32,452 C91.07,489.17 131.06,536.85 171,553.5 C364.55,634.18 436.56,616.48 625,531.5 C644.29,522.8 663.78,510.66 679.92,499.55 " fill="none" id="link_Admin_UC_RemoveBan" style="stroke:#181818;stroke-width:1.0;"/>
+    <polygon fill="#181818" points="684.07,496.65,674.6738,497.6698,679.9575,499.5255,678.1018,504.8093,684.07,496.65" style="stroke:#181818;stroke-width:1.0;"/>
+  </g>
+</svg>

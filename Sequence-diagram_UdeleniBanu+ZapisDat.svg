@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="460px" style="background:#FFFFFF;" version="1.1" viewBox="0 0 830 460" width="830px">
+  <defs/>
+  <g>
+    <text font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" x="415" y="25">1. UML Sequence Diagram - Udělení banu ve hře (Zápis dat)</text>
+    
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="66" x2="66" y1="96" y2="400"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="222" x2="222" y1="96" y2="400"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="474" x2="474" y1="96" y2="400"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="738" x2="738" y1="96" y2="400"/>
+    
+    <circle cx="66" cy="46" r="8" style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;"/>
+    <line style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;" x1="66" x2="66" y1="54" y2="71"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="53" x2="79" y1="59" y2="59"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="66" x2="53" y1="71" y2="84"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="66" x2="79" y1="71" y2="84"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="66" y="93">:Admin</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="174" x="135" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="222" y="83">Minecraft Server (Plugin)</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="230" x="359" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="474" y="83">BanManager Backend (Spring)</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="144" x="666" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="738" y="83">MySQL Database</text>
+    
+    <rect fill="#F1F1F1" height="267" style="stroke:#181818;stroke-width:1.0;" width="10" x="217" y="117"/>
+    <rect fill="#F1F1F1" height="195" style="stroke:#181818;stroke-width:1.0;" width="10" x="469" y="153"/>
+    <rect fill="#F1F1F1" height="71" style="stroke:#181818;stroke-width:1.0;" width="10" x="733" y="235"/>
+    
+    <polygon fill="#181818" points="205,129,215,133,205,137" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="66" x2="211" y1="133" y2="133"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="73" y="126">1: Příkaz /ban &lt;hráč&gt; &lt;důvod&gt;</text>
+    
+    <polygon fill="#181818" points="457,165,467,169,457,173" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="227" x2="463" y1="169" y2="169"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="234" y="162">2: HTTP POST /api/bans (JSON data)</text>
+    
+    <polygon fill="#181818" points="489,199,499,203,489,207" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M479,185 L509,185 L509,203 L489,203" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="514" y="198">3: validace dat (UUID, formát)</text>
+    
+    <polygon fill="#181818" points="721,247,731,251,721,255" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="479" x2="727" y1="251" y2="251"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="486" y="244">4: SQL INSERT INTO bans (...)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="479" x2="732" y1="289" y2="289"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="725" y="284">5: Potvrzení zápisu (OK)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="227" x2="468" y1="331" y2="331"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="461" y="326">6: HTTP 201 Created</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="66" x2="216" y1="367" y2="367"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="209" y="362">7: Zpráva "Hráč úspěšně zabanován"</text>
+    
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="660px" style="background:#FFFFFF;" version="1.1" viewBox="0 0 940 660" width="940px">
+  <defs/>
+  <g>
+    <text font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" x="470" y="25">4. UML Sequence Diagram - Přihlášení přes Microsoft OAuth2</text>
+    
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="66" x2="66" y1="96" y2="620"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="212" x2="212" y1="96" y2="620"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="444" x2="444" y1="96" y2="620"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="688" x2="688" y1="96" y2="620"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="860" x2="860" y1="96" y2="620"/>
+    
+    <circle cx="66" cy="46" r="8" style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;"/>
+    <line style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;" x1="66" x2="66" y1="54" y2="71"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="53" x2="79" y1="59" y2="59"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="66" x2="53" y1="71" y2="84"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="66" x2="79" y1="71" y2="84"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="66" y="93">:Hráč</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="124" x="150" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="212" y="83">React Frontend</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="210" x="339" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="444" y="83">BanManager Backend</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="194" x="591" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="688" y="83">Microsoft OAuth API</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="124" x="798" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="860" y="83">MySQL DB</text>
+    
+    <rect fill="#F1F1F1" height="485" style="stroke:#181818;stroke-width:1.0;" width="10" x="207" y="117"/>
+    <rect fill="#F1F1F1" height="325" style="stroke:#181818;stroke-width:1.0;" width="10" x="439" y="245"/>
+    <rect fill="#F1F1F1" height="110" style="stroke:#181818;stroke-width:1.0;" width="10" x="683" y="145"/>
+    <rect fill="#F1F1F1" height="105" style="stroke:#181818;stroke-width:1.0;" width="10" x="683" y="275"/>
+    <rect fill="#F1F1F1" height="60" style="stroke:#181818;stroke-width:1.0;" width="10" x="855" y="420"/>
+    
+    <polygon fill="#181818" points="195,129,205,133,195,137" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="66" x2="201" y1="133" y2="133"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="73" y="126">1: Kliknutí na "Přihlásit se přes Microsoft"</text>
+    
+    <polygon fill="#181818" points="671,157,681,161,671,165" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="217" x2="677" y1="161" y2="161"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="224" y="154">2: Přesměrování prohlížeče na Microsoft Login Page</text>
+    
+    <polygon fill="#181818" points="695,186,685,190,695,194" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="66" x2="681" y1="190" y2="190"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="674" y="183">3: Hráč zadá heslo a schválí přístup aplikaci</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="217" x2="683" y1="225" y2="225"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="676" y="220">4: Redirect zpět na web + Autorizační kód (code)</text>
+    
+    <polygon fill="#181818" points="427,257,437,261,427,265" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="217" x2="433" y1="261" y2="261"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="224" y="254">5: POST /api/auth/callback (code)</text>
+    
+    <polygon fill="#181818" points="671,287,681,291,671,295" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="449" x2="677" y1="291" y2="291"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="456" y="284">6: POST /oauth/v2.0/token (code + secret)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="449" x2="682" y1="325" y2="325"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="675" y="320">7: Vrácení Access Tokenu a ID Tokenu</text>
+    
+    <polygon fill="#181818" points="671,352,681,356,671,360" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="449" x2="677" y1="356" y2="356"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="456" y="349">8: GET /v1.0/me (Authorization: Bearer Token)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="449" x2="682" y1="380" y2="380"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="675" y="375">9: Data profilu (xbox_id, minecraft_name, uuid)</text>
+    
+    <polygon fill="#181818" points="843,432,853,436,843,440" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="449" x2="849" y1="436" y2="436"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="456" y="429">10: Kontrola existence hráče v DB / Upsert</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="449" x2="854" y1="465" y2="465"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="847" y="460">11: Hráč ověřen a načten z DB</text>
+    
+    <polygon fill="#181818" points="454,502,464,506,454,510" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M449,488 L479,488 L479,506 L459,506" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="484" y="501">12: Generování aplikace JWT tokenu</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="217" x2="438" y1="540" y2="540"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="431" y="535">13: HTTP 200 OK (Vlastní JWT token + info o hráči)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="66" x2="206" y1="575" y2="575"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="199" y="570">14: Uložení tokenu do LocalStorage, stav změněn na Přihlášen</text>
+    
+  </g>
+</svg>

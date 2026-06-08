@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="460px" style="background:#FFFFFF;" version="1.1" viewBox="0 0 830 460" width="830px">
+  <defs/>
+  <g>
+    <text font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" x="415" y="25">2. UML Sequence Diagram - Prohlížení seznamu banů na webu (Čtení dat)</text>
+    
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="76" x2="76" y1="96" y2="400"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="232" x2="232" y1="96" y2="400"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="484" x2="484" y1="96" y2="400"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="748" x2="748" y1="96" y2="400"/>
+    
+    <circle cx="76" cy="46" r="8" style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;"/>
+    <line style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;" x1="76" x2="76" y1="54" y2="71"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="63" x2="89" y1="59" y2="59"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="76" x2="63" y1="71" y2="84"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="76" x2="89" y1="71" y2="84"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="76" y="93">:Návštěvník</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="134" x="165" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="232" y="83">React Frontend</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="230" x="369" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="484" y="83">BanManager Backend (Spring)</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="144" x="676" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="748" y="83">MySQL Database</text>
+    
+    <rect fill="#F1F1F1" height="267" style="stroke:#181818;stroke-width:1.0;" width="10" x="227" y="117"/>
+    <rect fill="#F1F1F1" height="195" style="stroke:#181818;stroke-width:1.0;" width="10" x="479" y="153"/>
+    <rect fill="#F1F1F1" height="71" style="stroke:#181818;stroke-width:1.0;" width="10" x="743" y="235"/>
+    
+    <polygon fill="#181818" points="215,129,225,133,215,137" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="76" x2="221" y1="133" y2="133"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="83" y="126">1: Příchod na web / Vyžádání seznamu</text>
+    
+    <polygon fill="#181818" points="467,165,477,169,467,173" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="237" x2="473" y1="169" y2="169"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="244" y="162">2: HTTP GET /api/bans</text>
+    
+    <polygon fill="#181818" points="499,199,509,203,499,207" style="stroke:#181818;stroke-width:1.0;"/>
+    <path d="M489,185 L519,185 L519,203 L499,203" fill="none" style="stroke:#181818;stroke-width:1.0;"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="524" y="198">3: Příprava DB dotazu (Repository)</text>
+    
+    <polygon fill="#181818" points="731,247,741,251,731,255" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="489" x2="737" y1="251" y2="251"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="496" y="244">4: SQL SELECT * FROM bans WHERE ...</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="489" x2="742" y1="289" y2="289"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="735" y="284">5: Výsledek dotazu (Sada řádků)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="237" x2="478" y1="331" y2="331"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="471" y="326">6: HTTP 200 OK (JSON List of Bans)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="76" x2="226" y1="367" y2="367"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="219" y="362">7: Vykreslení tabulky s bany v prohlížeči</text>
+    
+  </g>
+</svg>

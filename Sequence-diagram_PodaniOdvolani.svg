@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="580px" style="background:#FFFFFF;" version="1.1" viewBox="0 0 830 580" width="830px">
+  <defs/>
+  <g>
+    <text font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" x="415" y="25">3. UML Sequence Diagram - Podání odvolání (Hlídání integrity dat)</text>
+    
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="76" x2="76" y1="96" y2="540"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="232" x2="232" y1="96" y2="540"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="484" x2="484" y1="96" y2="540"/>
+    <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5,5;" x1="748" x2="748" y1="96" y2="540"/>
+    
+    <circle cx="76" cy="46" r="8" style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;"/>
+    <line style="stroke:#181818;stroke-width:1.5;fill:#F1F1F1;" x1="76" x2="76" y1="54" y2="71"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="63" x2="89" y1="59" y2="59"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="76" x2="63" y1="71" y2="84"/>
+    <line style="stroke:#181818;stroke-width:1.5;" x1="76" x2="89" y1="71" y2="84"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="76" y="93">:Hráč</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="134" x="165" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="232" y="83">React Frontend</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="230" x="369" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="484" y="83">BanManager Backend (Spring)</text>
+    
+    <rect fill="#F1F1F1" height="31" style="stroke:#181818;stroke-width:1.5;" width="144" x="676" y="63"/>
+    <text font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="748" y="83">MySQL Database</text>
+    
+    <rect fill="#F1F1F1" height="405" style="stroke:#181818;stroke-width:1.0;" width="10" x="227" y="117"/>
+    <rect fill="#F1F1F1" height="345" style="stroke:#181818;stroke-width:1.0;" width="10" x="479" y="153"/>
+    <rect fill="#F1F1F1" height="50" style="stroke:#181818;stroke-width:1.0;" width="10" x="743" y="180"/>
+    <rect fill="#F1F1F1" height="70" style="stroke:#181818;stroke-width:1.0;" width="10" x="743" y="340"/>
+    
+    <polygon fill="#181818" points="215,129,225,133,215,137" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="76" x2="221" y1="133" y2="133"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="83" y="126">1: Kliknutí na "Odeslat odvolání"</text>
+    
+    <polygon fill="#181818" points="467,165,477,169,467,173" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="237" x2="473" y1="169" y2="169"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="244" y="162">2: HTTP POST /api/tickets (banId, text)</text>
+    
+    <polygon fill="#181818" points="731,192,741,196,731,200" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="489" x2="737" y1="196" y2="196"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="496" y="189">3: SELECT COUNT(*) FROM tickets WHERE ban_id = ...</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="489" x2="742" y1="220" y2="220"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="735" y="215">4: Výsledek (počet nalezených záznamů)</text>
+    
+    <rect fill="none" height="260" style="stroke:#181818;stroke-width:1.5;" width="780" x="25" y="245"/>
+    <path d="M25,245 L95,245 L105,260 L145,260 L145,245" fill="#EEEEEE" style="stroke:#181818;stroke-width:1.5;"/>
+    <text font-family="sans-serif" font-size="12" font-weight="bold" x="30" y="258">alt [count &gt; 0]</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="237" x2="474" y1="285" y2="285"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="465" y="280">5a: HTTP 400 Bad Request (Duplicita)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="76" x2="222" y1="310" y2="310"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="215" y="305">6a: Zobrazení chyby "K tomuto banu už odvolání existuje"</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:4,4;" x1="25" x2="805" y1="325" y2="325"/>
+    <text font-family="sans-serif" font-size="12" font-weight="bold" x="30" y="338">[else]</text>
+    
+    <polygon fill="#181818" points="731,352,741,356,731,360" style="stroke:#181818;stroke-width:1.0;"/>
+    <line style="stroke:#181818;stroke-width:1.0;" x1="489" x2="737" y1="356" y2="356"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="496" y="349">5b: SQL INSERT INTO tickets &amp; messages (...)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="489" x2="742" y1="390" y2="390"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="735" y="385">6b: Potvrzení uložení obou entit</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="237" x2="474" y1="435" y2="435"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="465" y="430">7b: HTTP 201 Created (Vrací data ticketu)</text>
+    
+    <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2,2;" x1="76" x2="222" y1="475" y2="475"/>
+    <text font-family="sans-serif" font-size="13" text-anchor="end" x="215" y="470">8b: Přesměrování na chat podaného ticketu</text>
+    
+    <text font-family="sans-serif" font-size="13" text-anchor="start" x="83" y="525">Konec případu užití</text>
+    
+  </g>
+</svg>
